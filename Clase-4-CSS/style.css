@@ -1,0 +1,11 @@
+h1 {
+            color: green;
+            font-size: 18px;
+            text-align: center;
+            background-color: lightgray;
+        }
+        .titulo-especial {
+            color: blue;
+            text-align:left;
+            background-color: black;
+        }

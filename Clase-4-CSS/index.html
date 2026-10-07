@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Inline styles (son mala practica, sintaxis complicada y no permite repeticion) -->
+    <!-- <h1 style="color: blue; background-color: lightgray; text-align: center;">Hello, World!</h1> -->
+    
+    <!--Indica al navegador que se escribira codigo css-->
+    <style>
+        /* CSS interno (mejor que inline styles, pero no permite reutilizacion) */
+        h1 {
+            color: green;
+            font-size: 18px;
+            text-align: center;
+            background-color: lightgray;
+        }
+        .titulo-especial {
+            color: blue;
+            text-align:left;
+            background-color: black;
+        }
+    </style>
+    <h1>Hola mundo</h1>
+    <h1 class="titulo-especial">Título especial</h1>
+    <h1>titulo secundario</h1>
+    <h2 class="titulo-especial">Subtitulo especial</h2>
+
+
+</body>
+</html>
