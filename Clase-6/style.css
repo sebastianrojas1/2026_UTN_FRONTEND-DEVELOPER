@@ -23,12 +23,28 @@
         - gap
         - flex-wrap
     */
+
+    /* si la flex-direction: row 
+        justify-content: afecta al eje horizontal
+        align-items: afecta al eje vertical
+    si la flex-direction: column
+        align-items: afecta al eje horizontal
+        justify-content: afecta al eje vertical
+    */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    /* space-evenly: divide de forma equitativa el espacio restante entre los hijos y bordes
+    space-around: divide el espacio entre los hijos y los bordes divide la mitad del espacio entre los hijos
+    space-between: divide el espacio sobrante de manera equitativa entre los hijos,
+     nada para los bordes
+     */
+    align-items: center;
+    gap: 10px;
 }
 
 .hijo{
-    width: 2200px;
+    width: 200px;
     height: 300px;
     border-radius: 10px;
     border: 1px solid black;
