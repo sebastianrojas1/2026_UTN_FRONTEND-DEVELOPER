@@ -1,0 +1,11 @@
+{
+    "editor.snippetSuggestions": "top",
+    "[html]": {
+        "editor.suggest.showSnippets": true,
+        "editor.tabCompletion": "onlySnippets"
+    },
+    "[css]": {
+        "editor.suggest.showSnippets": true,
+        "editor.tabCompletion": "onlySnippets"
+    }
+}

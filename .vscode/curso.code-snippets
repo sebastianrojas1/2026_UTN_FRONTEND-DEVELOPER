@@ -1,0 +1,64 @@
+{
+    "Curso: contenedor con clase": {
+        "scope": "html",
+        "prefix": "curso-div",
+        "body": [
+            "<div class=\"${1:container}\">",
+            "    $0",
+            "</div>"
+        ],
+        "description": "Contenedor HTML con clase editable."
+    },
+    "Curso: seccion con titulo": {
+        "scope": "html",
+        "prefix": "curso-seccion",
+        "body": [
+            "<section class=\"${1:products-section}\">",
+            "    <h2 class=\"${2:title}\">${3:Titulo}</h2>",
+            "    $0",
+            "</section>"
+        ],
+        "description": "Seccion con titulo, siguiendo las practicas de maquetacion."
+    },
+    "Curso: tarjeta de producto": {
+        "scope": "html",
+        "prefix": "curso-tarjeta",
+        "body": [
+            "<div class=\"product-card\">",
+            "    <img class=\"product-card__image\" src=\"${1:./imagenes/producto.jpg}\" alt=\"${2:Descripcion del producto}\">",
+            "    <h3 class=\"product-card__title\">${3:Nombre del producto}</h3>",
+            "    <span class=\"product-card__real-price\">${4:Precio}</span>",
+            "    <button class=\"product-card__buy_btn\" type=\"button\">${5:Comprar}</button>",
+            "    $0",
+            "</div>"
+        ],
+        "description": "Tarjeta HTML basada en Clase-10-Practica; los estilos se escriben en CSS."
+    },
+    "Curso: fila con Flexbox": {
+        "scope": "css",
+        "prefix": "curso-flex",
+        "body": [
+            ".${1:product-list}{",
+            "    display: flex;",
+            "    flex-direction: row;",
+            "    flex-wrap: wrap;",
+            "    gap: ${2:20px};",
+            "    $0",
+            "}"
+        ],
+        "description": "Bloque Flexbox sencillo para listas y contenedores."
+    },
+    "Curso: media query": {
+        "scope": "css",
+        "prefix": "curso-responsive",
+        "body": [
+            "@media (max-width: ${1:768px}){",
+            "    .${2:product-list}{",
+            "        flex-direction: column;",
+            "        $0",
+            "    }",
+            "}"
+        ],
+        "description": "Media query basica para adaptar un contenedor Flexbox."
+    }
+}
