@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <nav class="nav">
             <div class="nav_left">
                 <div class="nav_logo"><img src=".\img\openai-brands-solid-full.svg" alt="logo" class="nav_img"><span>Business</span></div>
-                <ul class="nav_ul">
+                <ul class="nav_ul" id="nav_menu">
                     <li class="nav_il"><a href="#" class="nav_link">¿Por qué OpenAI?</a></li>
                     <li class="nav_il"><a href="#" class="nav_link">Productos</a></li>
                     <li class="nav_il"><a href="#" class="nav_link">Soluciones</a></li>
@@ -21,8 +21,9 @@
                     <li class="nav_il"><a href="#" class="nav_link">Precios</a></li>
                 </ul>
                 <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
+                <button class="nav_toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav_menu nav_actions"><span aria-hidden="true">◫</span></button>
             </div>
-            <div class="container_button">
+            <div class="container_button" id="nav_actions">
                 <details class="dropdown">
                     <summary class="summary">Prueba OpenAi<span aria-hidden="true">⌄</span></summary>
                     <ul class="dropdown_menu">
@@ -34,9 +35,99 @@
                 <button class="nav_button">Hablar con un experto</button>
             </div>
         </nav>
-    </div>
     </header>
-    
+    <section class="section_hero">
+        <div class="section_container_left">
+            <p class="section_subtitle">OpenAI para la investigación</p>
+            <h1 class="section_title">Haz una investigación a nivel de experto con un solo mensaje</h1>
+            <p class="section_text">Reúne, analiza y sintetiza información más rápido con herramientas de IA que generan informes estructurados y con citas en minutos, no en días.</p>
+            <div class="section_container_button">
+                <button class="section_button1"><a href="https://chatgpt.com/team-sign-up?openaicom_referred=true" target="_blank" class="section_link1">Probar ChatGPT Business</a></button>
+                <button class="section_button2"><a href="#" class="section_link2">Comunícate con el Departamento de Ventas</a></button>
+            </div>
+        </div>
+        <div class="section_container_right">
+            <img src=" https://images.ctfassets.net/kftzwdyauwt9/s3mCQrDENPWinYfGlecq2/73a01038aa0e5f1946a1858cde281b41/solution-research-hero.png?w=1920&q=90&fm=webp"
+             alt="hero" class="section_img">
+        </div>
+    </section>
+    <section class="section">
+        <div class="section_container_up">
+            <h2 class="section_title">Encuentra la solución adecuada</h2>
+            <p class="section_text">Compara productos que respaldan la investigación en todos los niveles,
+             desde la exploración rápida hasta la elaboración de informes detallados.</p>
+        </div>
+        <div class="section_container_bottom">
+            <div class="section_container_card">
+                <img src="https://images.ctfassets.net/kftzwdyauwt9/5HJ9mUD2O3cgaPHKvTL9hR/ee39a6cf5c3b4334507e695c921cabf8/solution-research-thumbnail-01.png?w=1920&q=90&fm=webp" alt="hero" class="section_img">
+                <h3 class="section_subtitle">ChatGPT</h3>
+                <p class="section_text">Tu asistente de investigación en el chat.</p>
+                <ul>
+                    <li class="section_list">Efectúa revisiones de literatura, resume artículos o sintetiza ideas de archivos PDF y datos cargados.</li>
+                    <li class="section_list">Referencia las fuentes directamente y exporta notas estructuradas al instante.</li>
+                </ul>
+                <a href="#" class="section_link">Probar ChatGPT Business</a>
+            </div>
+            <div class="section_container_card">
+                <img src="https://images.ctfassets.net/kftzwdyauwt9/3PfifPkyN82OvhMFTSD8SU/02ddb649521bc1dfc766bd8e401a7f46/solution-research-thumbnail-02.png?w=1920&q=90&fm=webp" alt="hero" class="section_img">
+                <h3 class="section_subtitle">Investigación a fondo</h3>
+                <p class="section_text">Investigación avanzada para preguntas complejas en ChatGPT.</p>
+                <ul>
+                    <li class="section_list">Busca y analiza información de cientos de fuentes en línea.</li>
+                    <li class="section_list">Usa el razonamiento de varios pasos para comparar y validar las conclusiones.</li>
+                    <li class="section_list">Genera informes detallados respaldados por citas.</li>
+                </ul>
+                <a href="#" class="section_link">Usa la investigación a fondo</a>
+            </div>
+            <div class="section_container_card">
+                <img src="https://images.ctfassets.net/kftzwdyauwt9/1YcMUc9uJQDOCaUnbgK4k/3ab2827c4d2fd3e95edde4d6a321ea33/solution-research-thumbnail-03.png?w=1920&q=90&fm=webp" alt="hero" class="section_img">
+                <h3 class="section_subtitle">Recuperación de conocimiento</h3>
+                <p class="section_text">Respuestas con citas en tiempo real.</p>
+                <ul>
+                    <li class="section_list">Crea asistentes de conocimiento impulsados por los datos y el contenido de tu empresa.</li>
+                    <li class="section_list">Ofrece respuestas transparentes con referencias claras a las fuentes.</li>
+                </ul>
+                <a href="#" class="section_link">Obtener más información</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container_logos">
+            <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-tiktok" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-discord" style="color: rgb(255, 255, 255);"></i>
+        </div>
+        <div class="container_firma">
+            <p>OpenAI © 2015–2026 <a href="#">Gestionar cookies</a></p>
+        </div>
+        <div class="container_link">
+            <i class="fa-solid fa-earth-americas" style="color: rgb(255, 255, 255);"></i>
+            <a>Español <span>Latinoamérica</span></a>
+        </div>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('.nav_toggle');
+        const navigation = document.querySelector('.nav');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = navigation.classList.toggle('nav_open');
+            menuButton.setAttribute('aria-expanded', isOpen);
+            menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        });
+
+        navigation.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                navigation.classList.remove('nav_open');
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Abrir menú');
+                menuButton.focus();
+            }
+        });
+    </script>
 </body>
 <script src="https://kit.fontawesome.com/fba0babba2.js" crossorigin="anonymous"></script>
 
