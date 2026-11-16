@@ -109,25 +109,7 @@
             <a>Español <span>Latinoamérica</span></a>
         </div>
     </footer>
-    <script>
-        const menuButton = document.querySelector('.nav_toggle');
-        const navigation = document.querySelector('.nav');
-
-        menuButton.addEventListener('click', () => {
-            const isOpen = navigation.classList.toggle('nav_open');
-            menuButton.setAttribute('aria-expanded', isOpen);
-            menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
-        });
-
-        navigation.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                navigation.classList.remove('nav_open');
-                menuButton.setAttribute('aria-expanded', 'false');
-                menuButton.setAttribute('aria-label', 'Abrir menú');
-                menuButton.focus();
-            }
-        });
-    </script>
+       
 </body>
 <script src="https://kit.fontawesome.com/fba0babba2.js" crossorigin="anonymous"></script>
 
